@@ -47,7 +47,7 @@ trigram_probs = calculate_ngram_probability(trigram_count,bigram_count)
 
 df_unigram = pd.DataFrame(unigram_probs.items(), columns = ["unigram", "Probability"])
 df_bigram = pd.DataFrame(bigram_probs.items(), columns = ["bigram", "Probability"])
-df_trigram = pd.DataFrame(trigram_probs.items(), columns = ["unigram", "Probability"])
+df_trigram = pd.DataFrame(trigram_probs.items(), columns = ["trigram", "Probability"])
 
 print(df_unigram.to_string(index=False) )
 print(df_bigram.to_string(index=False))
