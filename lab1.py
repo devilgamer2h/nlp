@@ -26,6 +26,6 @@ meaningfull_words = [word.lower() for word in valid_tokens if word.lower() not i
 print(meaningfull_words)
 
 stemer = PorterStemmer()
-stemmed_words = [stemer.stem(word) for word in valid_tokens if word.lower() in meaningfull_words]
+stemmed_words = [stemer.stem(word) for word in meaningfull_words]
 print(stemmed_words)
 
